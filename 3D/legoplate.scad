@@ -1,7 +1,7 @@
 gridSpacing = [8, 8, 3.2];
 brickSpacing = [0.2, 0.2, 0.2];
 studRadius = 2.4;
-holeRadius = 2.732;
+holeRadius = studRadius;
 studHeight = 1.8;
 
 module GridTranslate(position){
