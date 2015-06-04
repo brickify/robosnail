@@ -1,13 +1,14 @@
 $fn=128;
 include <legoplate.scad>
 
-color([1,0,0,1]) GridTranslate([-1, -1, 0]) Brick([2,4,3]);
+brick();
+eyes();
 
-rotate([0,90,0]) {
-eye();
+module brick() {
+    color([1,0,0,1]) GridTranslate([-1, -1, 0]) Brick([2,4,3]);
 }
 
-module snail() {
+module eyes() {
     translate([0, -gridSpacing.y/2, 3*gridSpacing.z]) {
         translate([-gridSpacing.x/2, 0, 0]) rotate([0,0,-15])
             eye();
