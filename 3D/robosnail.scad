@@ -1,4 +1,4 @@
-$fn=128;
+$fn=48;
 include <legoplate.scad>
 
 brick();
