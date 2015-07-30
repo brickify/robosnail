@@ -64,6 +64,7 @@ module pupil(bendRadius, bendAngle, eyeRadius, pupilRadius) {
     translate([0, -bendRadius, 0])
     rotate([bendAngle + 2*eyeRadius + pupilRadius,0,0])
     translate([0, bendRadius, 0])
+    translate([0, -pupilRadius/3, 0])
     color([0,0,0,1]) sphere(pupilRadius);
 }
 
