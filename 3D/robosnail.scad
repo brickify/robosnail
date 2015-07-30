@@ -13,7 +13,7 @@ module eyes() {
         translate([-gridSpacing.x/2, 0, 0]) rotate([0,0,-15])
             eye();
         translate([gridSpacing.x/2, 0, 0]) rotate([0,0,15])
-            !eye();
+            eye();
     }
 }
 
